@@ -12,15 +12,15 @@ const msgDefaults = {
 
 let attachments = [
   {
-    title: 'Starbot will help you find the hippest repos on GitHub',
+    title: 'Rounds will help you figure who is next to buy beer',
     color: '#2FA44F',
-    text: '`/starbot repos` returns hip repos \n`/starbot javascript` returns hip JavaScript repos',
+    text: '`/rounds buying?` returns who is buying \n`/rounds buying?` returns who is buying',
     mrkdwn_in: ['text']
   },
   {
-    title: 'Configuring Starbot',
+    title: 'Help',
     color: '#E3E4E6',
-    text: '`/starbot help` ... you\'re lookin at it! \n',
+    text: '`/rounds help` ... you\'re lookin at it! \n',
     mrkdwn_in: ['text']
   }
 ]
