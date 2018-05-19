@@ -5,11 +5,13 @@ const _ = require('lodash')
 const config = require('../config')
 const trending = require('github-trending')
 
+
 const msgDefaults = {
   response_type: 'in_channel',
-  username: 'Starbot',
+  username: 'Rounds',
   icon_emoji: config('ICON_EMOJI')
 }
+
 
 const handler = (payload, res) => {
   trending('javascript', (err, repos) => {
