@@ -12,9 +12,9 @@ const msgDefaults = {
 
 let attachments = [
   {
-    title: 'Rounds will help you figure who is next to buy beer',
+    title: 'Rounds will help you figure who\'s up to buy beer',
     color: '#2FA44F',
-    text: '`/rounds buying?` returns who is buying \n`/rounds buying?` returns who is buying',
+    text: '`/rounds buying` returns who is buying',
     mrkdwn_in: ['text']
   },
   {
