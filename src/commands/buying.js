@@ -33,7 +33,7 @@ let attachments = [
   {
     title: 'Buying This Week',
     color: '#2FA44F',
-    text: data.group.id,
+    text: data,
     mrkdwn_in: ['text']
   },
   {
