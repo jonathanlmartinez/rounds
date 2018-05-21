@@ -12,7 +12,7 @@ const msgDefaults = {
 
 var request = require('request');
 var url = 'https://slack.com/api/api.test';
-var dataFromApi = ''
+var dataFromApi = 'hello'
 request.get({
 
   url: url,
