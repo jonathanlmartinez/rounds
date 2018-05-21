@@ -12,28 +12,30 @@ const msgDefaults = {
 
 var request = require('request');
 var url = 'https://slack.com/api/api.test';
-var dataFromApi = 'hello'
-request.get({
 
-  url: url,
-  json: true,
-  headers: {'User-Agent': 'request'}
-}, (err, res, data) => {
-  if (err) {
-    console.log('Error:', err);
-  } else if (res.statusCode !== 200) {
-    console.log('Status:', res.statusCode);
-  } else {
-    // data is already parsed as JSON:
-    dataFromApi = data;
-  }
-})
+function getData(){
+  request.get({
+
+    url: url,
+    json: true,
+    headers: {'User-Agent': 'request'}
+  }, (err, res, data) => {
+    if (err) {
+      console.log('Error:', err);
+    } else if (res.statusCode !== 200) {
+      console.log('Status:', res.statusCode);
+    } else {
+      // data is already parsed as JSON:
+      return data
+    }
+  })
+}
 
 let attachments = [
   {
     title: 'Buying This Week',
     color: '#2FA44F',
-    text: dataFromApi,
+    text: getData,
     mrkdwn_in: ['text']
   },
   {
