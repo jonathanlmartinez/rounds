@@ -11,13 +11,10 @@ const msgDefaults = {
 }
 
 var request = require('request');
-var url = 'https://slack.com/api/groups.info?token=' + 
-          process.env.APITOKEN + 
-          '&channel=' +
-          process.env.CHANNEL +
-          '&pretty=1';
-
+var url = 'https://api.github.com/users/rsp';
+var data = undefined
 request.get({
+
   url: url,
   json: true,
   headers: {'User-Agent': 'request'}
@@ -28,44 +25,43 @@ request.get({
     console.log('Status:', res.statusCode);
   } else {
     // data is already parsed as JSON:
-    console.log(data.html_url);
-    let attachments = [
-      {
-        title: 'Buying This Week',
-        color: '#2FA44F',
-        text: data.html_url,
-        mrkdwn_in: ['text']
-      },
-      {
-        title: 'On Deck:',
-        color: '#E3E4E6',
-        text: 'Somebody',
-        mrkdwn_in: ['text']
-      },
-      {
-        title: 'In the hole:',
-        color: '#E3E4E6',
-        text: 'NoBody',
-        mrkdwn_in: ['text']
-      }
-    ]
-
-    const handler = (payload, res) => {
-      let msg = _.defaults({
-        channel: payload.channel_name,
-        attachments: attachments
-      }, msgDefaults)
-
-      res.set('content-type', 'application/json')
-      res.status(200).json(msg)
-      return
-    }
-
-    module.exports = { pattern: /buying/ig, handler: handler }
+    data = data.html_url;
   }
 })
 
+let attachments = [
+  {
+    title: 'Buying This Week',
+    color: '#2FA44F',
+    text: data.group.id,
+    mrkdwn_in: ['text']
+  },
+  {
+    title: 'On Deck:',
+    color: '#E3E4E6',
+    text: 'Somebody',
+    mrkdwn_in: ['text']
+  },
+  {
+    title: 'In the hole:',
+    color: '#E3E4E6',
+    text: 'NoBody',
+    mrkdwn_in: ['text']
+  }
+]
 
+const handler = (payload, res) => {
+  let msg = _.defaults({
+    channel: payload.channel_name,
+    attachments: attachments
+  }, msgDefaults)
+
+  res.set('content-type', 'application/json')
+  res.status(200).json(msg)
+  return
+}
+
+module.exports = { pattern: /buying/ig, handler: handler }
 
 
 // 'use strict';
