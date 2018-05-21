@@ -35,7 +35,7 @@ let attachments = [
   {
     title: 'Buying This Week',
     color: '#2FA44F',
-    text: getData,
+    text: getData(),
     mrkdwn_in: ['text']
   },
   {
