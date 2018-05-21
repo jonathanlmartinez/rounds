@@ -26,7 +26,7 @@ function getData() {
       return 'Status:' + res.statusCode;
     } else {
       // data is already parsed as JSON:
-      return data;
+      return data.html_url;
     }
   });
 }
