@@ -11,8 +11,8 @@ const msgDefaults = {
 }
 
 var request = require('request');
-var url = 'https://api.github.com/users/rsp';
-var data = undefined
+var url = 'https://slack.com/api/api.test';
+var dataFromApi = ''
 request.get({
 
   url: url,
@@ -25,7 +25,7 @@ request.get({
     console.log('Status:', res.statusCode);
   } else {
     // data is already parsed as JSON:
-    data = data.html_url;
+    dataFromApi = data;
   }
 })
 
@@ -33,7 +33,7 @@ let attachments = [
   {
     title: 'Buying This Week',
     color: '#2FA44F',
-    text: data,
+    text: dataFromApi,
     mrkdwn_in: ['text']
   },
   {
