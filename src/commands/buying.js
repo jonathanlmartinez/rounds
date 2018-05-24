@@ -6,7 +6,7 @@ const config = require('../config')
 
 const msgDefaults = {
   response_type: 'in_channel',
-  username: 'Rounds',
+  username: 'Starbot',
   icon_emoji: config('ICON_EMOJI')
 }
 
