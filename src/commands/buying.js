@@ -27,14 +27,13 @@ function getData() {
       return 'Status:' + res.statusCode;
     } else {
       // data is already parsed as JSON:
-      return data.id;
+      return "YES";
     }
   });
 }
 
 
 var theData = getData()
-console.log(theData)
 let attachments = [
   {
     title: 'Buying This Week',
