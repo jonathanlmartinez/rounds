@@ -9,26 +9,26 @@ const msgDefaults = {
   username: 'Starbot',
   icon_emoji: config('ICON_EMOJI')
 }
-
+var mandatory = require('mandatory');
+var VError = require('verror');
 var request = require('request');
 var url = 'https://api.github.com/users/rsp';
 
 function getData() {
-  return "hi"
-  // request.get({
-  // //   url: url,
-  // //   json: true,
-  // //   headers: {'User-Agent': 'request'}
-  // // }, (err, res, data) => {
-  // //   if (err) {
-  // //     return 'Error:' + err;
-  // //   } else if (res.statusCode !== 200) {
-  // //     return 'Status:' + res.statusCode;
-  // //   } else {
-  // //     // data is already parsed as JSON:
-  // //     return "YES";
-  // //   }
-  // });
+  request.get({
+    url: url,
+    json: true,
+    
+  }, (err, res, data) => {
+    if (err) {
+      return 'Error:' + err;
+    } else if (res.statusCode !== 200) {
+      return 'Status:' + res.statusCode;
+    } else {
+      // data is already parsed as JSON:
+      return "YES";
+    }
+  });
 }
 
 
