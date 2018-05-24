@@ -14,7 +14,7 @@ var request = require('request');
 var url = 'https://api.github.com/users/rsp';
 
 function getData() {
-  
+
   request.get({
 
     url: url,
@@ -27,7 +27,7 @@ function getData() {
       return 'Status:' + res.statusCode;
     } else {
       // data is already parsed as JSON:
-      return data.html_url;
+      return data.id;
     }
   });
 }
@@ -39,7 +39,7 @@ let attachments = [
   {
     title: 'Buying This Week',
     color: '#2FA44F',
-    text: theData,
+    text: getData(),
     mrkdwn_in: ['text']
   },
   {
