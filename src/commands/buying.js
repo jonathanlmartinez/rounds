@@ -14,25 +14,27 @@ var request = require('request');
 var url = 'https://slack.com/api/api.test';
 
 function getData() {
-  request.get({
+  return "hi"
+  // request.get({
 
-    url: url,
-    json: true,
-    headers: {'User-Agent': 'request'}
-  }, (err, res, data) => {
-    if (err) {
-      return 'Error:' + err;
-    } else if (res.statusCode !== 200) {
-      return 'Status:' + res.statusCode;
-    } else {
-      // data is already parsed as JSON:
-      return data.html_url;
-    }
-  });
+  //   url: url,
+  //   json: true,
+  //   headers: {'User-Agent': 'request'}
+  // }, (err, res, data) => {
+  //   if (err) {
+  //     return 'Error:' + err;
+  //   } else if (res.statusCode !== 200) {
+  //     return 'Status:' + res.statusCode;
+  //   } else {
+  //     // data is already parsed as JSON:
+  //     return data.html_url;
+  //   }
+  // });
 }
 
 
 var theData = getData()
+console.log(theData)
 let attachments = [
   {
     title: 'Buying This Week',
