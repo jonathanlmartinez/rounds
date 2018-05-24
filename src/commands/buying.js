@@ -36,12 +36,8 @@ function getData() {
 
 
 const handler = (payload, res) => {
-  let msg = _.defaults({
-    channel: payload.channel_name,
-    attachments: attachments
-  }, msgDefaults)
   var theData = getData()
-  var attachments = [
+  let attachments = [
     {
       title: 'Buying This Week',
       color: '#2FA44F',
@@ -61,6 +57,12 @@ const handler = (payload, res) => {
       mrkdwn_in: ['text']
     }
   ]
+  let msg = _.defaults({
+    channel: payload.channel_name,
+    attachments: attachments
+  }, msgDefaults)
+  
+  
 
   res.set('content-type', 'application/json')
   res.status(200).json(msg)
