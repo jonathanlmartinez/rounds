@@ -6,7 +6,7 @@ const config = require('../config')
 
 const msgDefaults = {
   response_type: 'in_channel',
-  username: 'Starbot',
+  username: 'Rounds',
   icon_emoji: config('ICON_EMOJI')
 }
 
@@ -33,33 +33,34 @@ function getData() {
 }
 
 
-var theData = getData()
-let attachments = [
-  {
-    title: 'Buying This Week',
-    color: '#2FA44F',
-    text: theData,
-    mrkdwn_in: ['text']
-  },
-  {
-    title: 'On Deck:',
-    color: '#E3E4E6',
-    text: 'Somebody',
-    mrkdwn_in: ['text']
-  },
-  {
-    title: 'In the hole:',
-    color: '#E3E4E6',
-    text: 'NoBody',
-    mrkdwn_in: ['text']
-  }
-]
+
 
 const handler = (payload, res) => {
   let msg = _.defaults({
     channel: payload.channel_name,
     attachments: attachments
   }, msgDefaults)
+  var theData = getData()
+  var attachments = [
+    {
+      title: 'Buying This Week',
+      color: '#2FA44F',
+      text: theData,
+      mrkdwn_in: ['text']
+    },
+    {
+      title: 'On Deck:',
+      color: '#E3E4E6',
+      text: 'Somebody',
+      mrkdwn_in: ['text']
+    },
+    {
+      title: 'In the hole:',
+      color: '#E3E4E6',
+      text: 'NoBody',
+      mrkdwn_in: ['text']
+    }
+  ]
 
   res.set('content-type', 'application/json')
   res.status(200).json(msg)
@@ -145,3 +146,75 @@ module.exports = { pattern: /buying/ig, handler: handler }
 // }
 
 // module.exports = { pattern: /repos/ig, handler: handler }
+
+
+
+
+// 'use strict'
+
+// const _ = require('lodash')
+// const config = require('../config')
+
+// const msgDefaults = {
+//   response_type: 'in_channel',
+//   username: 'Rounds',
+//   icon_emoji: config('ICON_EMOJI')
+// }
+
+// var request = require('request');
+// var url = 'https://api.github.com/users/rsp';
+
+// function getData() {
+
+//   request.get({
+
+//     url: url,
+//     json: true,
+//     headers: {'User-Agent': 'request'}
+//   }, (err, res, data) => {
+//     if (err) {
+//       return 'Error:' + err;
+//     } else if (res.statusCode !== 200) {
+//       return 'Status:' + res.statusCode;
+//     } else {
+//       // data is already parsed as JSON:
+//       return "YES";
+//     }
+//   });
+// }
+
+
+// var theData = getData()
+// var attachments = [
+//   {
+//     title: 'Buying This Week',
+//     color: '#2FA44F',
+//     text: theData,
+//     mrkdwn_in: ['text']
+//   },
+//   {
+//     title: 'On Deck:',
+//     color: '#E3E4E6',
+//     text: 'Somebody',
+//     mrkdwn_in: ['text']
+//   },
+//   {
+//     title: 'In the hole:',
+//     color: '#E3E4E6',
+//     text: 'NoBody',
+//     mrkdwn_in: ['text']
+//   }
+// ]
+
+// const handler = (payload, res) => {
+//   let msg = _.defaults({
+//     channel: payload.channel_name,
+//     attachments: attachments
+//   }, msgDefaults)
+
+//   res.set('content-type', 'application/json')
+//   res.status(200).json(msg)
+//   return
+// }
+
+// module.exports = { pattern: /buying/ig, handler: handler }
