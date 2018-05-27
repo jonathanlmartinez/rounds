@@ -15,19 +15,10 @@ var request = require('request');
 var url = 'https://api.github.com/users/rsp';
 
 function getData() {
-  request.get({
-    url: url,
-    json: true,
+  request('https://api.github.com/users/rsp', { json: true }, (err, res, body) => {
+    if (err) { return console.log(err); }
+    return (body.url);
     
-  }, (err, res, data) => {
-    if (err) {
-      return 'Error:' + err;
-    } else if (res.statusCode !== 200) {
-      return 'Status:' + res.statusCode;
-    } else {
-      // data is already parsed as JSON:
-      return "YES";
-    }
   });
 }
 
