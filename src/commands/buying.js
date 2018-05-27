@@ -16,9 +16,13 @@ var url = 'https://api.github.com/users/rsp';
 
 function getData() {
   request('https://api.github.com/users/rsp', { json: true }, (err, res, body) => {
-    if (err) { return console.log(err); }
-    return (body.url);
-    
+    if (err) { 
+      return "error" + err; 
+    } else if (body.url) {
+      return body.url
+    } else {
+      return "test"
+    }
   });
 }
 
