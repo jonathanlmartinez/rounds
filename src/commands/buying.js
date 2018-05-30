@@ -14,22 +14,29 @@ var VError = require('verror');
 var request = require('request');
 var url = 'https://api.github.com/users/rsp';
 
-function getData() {
-  request('https://api.github.com/users/rsp', { json: true }, (err, res, body) => {
-    if (err) { 
-      return "error" + err; 
-    } else if (body) {
-      return body
-    } else {
-      return "test"
-    }
-  });
-}
 
 
 
 
 const handler = (payload, res) => {
+
+  function getData() {
+    request.get({
+      url: 'https://api.github.com/users/rsp',
+      json: true,
+      headers: {'User-Agent': 'request'}
+    }, (err, res, data) => {
+      if (err) {
+        console.log('Error:', err);
+      } else if (res.statusCode !== 200) {
+        console.log('Status:', res.statusCode);
+      } else {
+        // data is already parsed as JSON:
+        console.log(data);
+      }
+    });
+  }
+
   var theData = getData()
   let attachments = [
     {
