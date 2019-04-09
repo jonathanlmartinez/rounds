@@ -15,7 +15,7 @@ var VError = require('verror');
 var request = require('request');
 var url = 'https://api.github.com/users/rsp';
 
-
+var members = ["id":1,"name":"foo"]
 
 
 
@@ -26,7 +26,7 @@ const handler = (payload, res) => {
     {
       title: 'Buying This Week',
       color: '#2FA44F',
-      text: "hi",
+      text: members,
       mrkdwn_in: ['text']
     },
     {
