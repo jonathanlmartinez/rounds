@@ -15,13 +15,13 @@ var VError = require('verror');
 var request = require('request');
 var url = 'https://api.github.com/users/rsp';
 
-var h = new HashTable({
-  1: "bar", 
-  2: "bar", 
-  3: "bar",
-  4: "bar"});
+// var h = new HashTable({
+//   1: "bar", 
+//   2: "bar", 
+//   3: "bar",
+//   4: "bar"});
 
-var a ="ji"
+var a ="ji";
 
 
 const handler = (payload, res) => {
