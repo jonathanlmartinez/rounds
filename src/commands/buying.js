@@ -26,7 +26,7 @@ const handler = (payload, res) => {
     {
       title: 'Buying This Week',
       color: '#2FA44F',
-      text: req,
+      text: req.mandrill_events[0],
       mrkdwn_in: ['text']
     },
     {
