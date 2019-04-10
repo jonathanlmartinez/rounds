@@ -20,13 +20,13 @@ var members = ["id":1,"name":"foo"]
 
 
 const handler = (payload, res) => {
-  var members = "bar";
+  var members = "bar"
  
   let attachments = [
     {
       title: 'Buying This Week',
       color: '#2FA44F',
-      text: members,
+      text: "hi",
       mrkdwn_in: ['text']
     },
     {
