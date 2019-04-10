@@ -20,6 +20,7 @@ var members = ["id":1,"name":"foo"]
 
 
 const handler = (payload, res) => {
+  var members = ["id":1,"name":"foo"]
 
  
   let attachments = [
