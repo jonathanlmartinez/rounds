@@ -15,10 +15,8 @@ var VError = require('verror');
 var request = require('request');
 var url = 'https://api.github.com/users/rsp';
 
-var text = '{ "members" : [' +
-'{ "firstName":"John" , "lastName":"Doe" },' +
-'{ "firstName":"Anna" , "lastName":"Smith" },' +
-'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+var req = { mandrill_events: [{"event":"inbound","ts":1426249238}] };
+
 
 
 const handler = (payload, res) => {
@@ -28,7 +26,7 @@ const handler = (payload, res) => {
     {
       title: 'Buying This Week',
       color: '#2FA44F',
-      text: text,
+      text: req,
       mrkdwn_in: ['text']
     },
     {
