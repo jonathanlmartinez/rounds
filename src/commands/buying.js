@@ -20,7 +20,7 @@ var members = ["id":1,"name":"foo"]
 
 
 const handler = (payload, res) => {
-  var members = "bar"
+  // var members = "bar"
  
   let attachments = [
     {
