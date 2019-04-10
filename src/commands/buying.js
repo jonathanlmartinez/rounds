@@ -15,7 +15,7 @@ var VError = require('verror');
 var request = require('request');
 var url = 'https://api.github.com/users/rsp';
 
-var req = { mandrill_events: [{"event":"inbound","ts":1426249238}] };
+var req = ["hi","hello"];
 
 
 
