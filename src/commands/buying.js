@@ -21,6 +21,7 @@ var h = new HashTable({
   3: "bar",
   4: "bar"});
 
+var a ="ji"
 
 
 const handler = (payload, res) => {
@@ -30,7 +31,7 @@ const handler = (payload, res) => {
     {
       title: 'Buying This Week',
       color: '#2FA44F',
-      text: h.length,
+      text: a,
       mrkdwn_in: ['text']
     },
     {
