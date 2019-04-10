@@ -15,7 +15,11 @@ var VError = require('verror');
 var request = require('request');
 var url = 'https://api.github.com/users/rsp';
 
-var req = ["hi","hello"];
+var h = new HashTable({
+  1: "bar", 
+  2: "bar", 
+  3: "bar",
+  4: "bar"});
 
 
 
@@ -26,7 +30,7 @@ const handler = (payload, res) => {
     {
       title: 'Buying This Week',
       color: '#2FA44F',
-      text: req,
+      text: h.length,
       mrkdwn_in: ['text']
     },
     {
