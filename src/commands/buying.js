@@ -28,7 +28,7 @@ const handler = (payload, res) => {
     {
       title: 'Buying This Week',
       color: '#2FA44F',
-      text: member,
+      text: text,
       mrkdwn_in: ['text']
     },
     {
