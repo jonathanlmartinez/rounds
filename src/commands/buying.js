@@ -40,7 +40,7 @@ console.log(bar.length);
     {
       title: 'Buying This Week',
       color: '#2FA44F',
-      text: a,
+      text: bar[turn + 1],
       mrkdwn_in: ['text']
     },
     {
