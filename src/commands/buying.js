@@ -15,9 +15,22 @@ var VError = require('verror');
 var request = require('request');
 var url = 'https://api.github.com/users/rsp';
 
-var bar = ['Apple', 'Banana'];
+var bar = ['Emily'
+,'Chris D.'
+,'Jon M.'
+,'Chris B.'
+,'Lauren'
+,'Tom K '
+,'Ryan S'
+,'Brad A'
+,'Mike W.'
+,'Mary S.' 
+,'Vlad '
+,'Avi'
+,'Bill H.'
+];
 
-var a ="ji";
+var turn = 0
 
 
 const handler = (payload, res) => {
@@ -33,7 +46,7 @@ console.log(bar.length);
     {
       title: 'On Deck:',
       color: '#E3E4E6',
-      text: bar[1],
+      text: bar[turn],
       mrkdwn_in: ['text']
     },
     {
