@@ -31,18 +31,18 @@ var bar = ['Emily'
 ];
 
 var turn = 1
-function checkDate() {
-    var date = new Date();
-    console.log(date.getDay());
-    console.log(date.getHours());
-    if(date.getDay() === 6 && date.getHours() === 17) {
-        console.log("HELLO WORLD!");
-    }
-}
+// function checkDate() {
+//     var date = new Date();
+//     console.log(date.getDay());
+//     console.log(date.getHours());
+//     if(date.getDay() === 6 && date.getHours() === 17) {
+//         console.log("HELLO WORLD!");
+//     }
+// }
 
-var dateLoop = setInterval(function() {
-    checkDate();
-},5000);
+// var dateLoop = setInterval(function() {
+//     checkDate();
+// },5000);
 
 
 const handler = (payload, res) => {
@@ -66,6 +66,7 @@ const handler = (payload, res) => {
       mrkdwn_in: ['text']
     }
   ]
+  
   let msg = _.defaults({
     channel: payload.channel_name,
     attachments: attachments
