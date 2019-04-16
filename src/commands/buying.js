@@ -30,29 +30,39 @@ var bar = ['Emily'
 ,'Bill H.'
 ];
 
-var turn = 0
+var turn = 1
+function checkDate() {
+    var date = new Date();
+    console.log(date.getDay());
+    console.log(date.getHours());
+    if(date.getDay() === 6 && date.getHours() === 17) {
+        console.log("HELLO WORLD!");
+    }
+}
+
+var dateLoop = setInterval(function() {
+    checkDate();
+},5000);
 
 
 const handler = (payload, res) => {
-console.log(bar.length);
- 
   let attachments = [
     {
       title: 'Buying This Week',
       color: '#2FA44F',
-      text: bar[turn + 1],
+      text: bar[turn],
       mrkdwn_in: ['text']
     },
     {
       title: 'On Deck:',
       color: '#E3E4E6',
-      text: bar[turn],
+      text: bar[turn + 1],
       mrkdwn_in: ['text']
     },
     {
       title: 'In the hole:',
       color: '#E3E4E6',
-      text: 'NoBody',
+      text: bar[turn + 2],
       mrkdwn_in: ['text']
     }
   ]
