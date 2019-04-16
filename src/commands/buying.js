@@ -15,13 +15,13 @@ var VError = require('verror');
 var request = require('request');
 var url = 'https://api.github.com/users/rsp';
 
-var B = ['Apple', 'Banana'];
+var bar = ['Apple', 'Banana'];
 
 var a ="ji";
 
 
 const handler = (payload, res) => {
-
+console.log(bar.length);
  
   let attachments = [
     {
@@ -33,7 +33,7 @@ const handler = (payload, res) => {
     {
       title: 'On Deck:',
       color: '#E3E4E6',
-      text: B,
+      text: bar[1],
       mrkdwn_in: ['text']
     },
     {
