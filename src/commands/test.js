@@ -17,7 +17,7 @@ var request = require('request');
  var obj = {}; 
  obj[ 'bar' ] = true;       
  obj[ 'foo' ] = false; 
- 
+
 
 var turn = 0
 // function checkDate() {
@@ -68,4 +68,4 @@ const handler = (payload, res) => {
   return
 }
 
-module.exports = { pattern: /buying/ig, handler: handler }
+module.exports = { pattern: /test/ig, handler: handler }
