@@ -20,7 +20,7 @@ var request = require('request');
 
 console.log(obj)
 console.log(obj.bar)
-console.log(obj.[0])
+console.log(obj[0])
 var turn = 0
 // function checkDate() {
 //     var date = new Date();
