@@ -14,9 +14,9 @@ var mandatory = require('mandatory');
 var VError = require('verror');
 var request = require('request');
 
- var obj = {}; 
- obj[ 'bar' ] = true;       
- obj[ 'foo' ] = false; 
+ // var obj = {}; 
+ // obj[ 'bar' ] = true;       
+ // obj[ 'foo' ] = false; 
 
 
 var turn = 0
@@ -45,13 +45,13 @@ const handler = (payload, res) => {
     {
       title: 'On Deck:',
       color: '#E3E4E6',
-      text: turn + 1],
+      text: turn + 1,
       mrkdwn_in: ['text']
     },
     {
       title: 'In the hole:',
       color: '#E3E4E6',
-      text: turn + 2],
+      text: turn + 2,
       mrkdwn_in: ['text']
     }
   ]
