@@ -18,7 +18,7 @@ var request = require('request');
  obj[ 'bar' ] = true;       
  obj[ 'foo' ] = false; 
 
-console.log('*****************' + obj)
+console.log('*****************' + obj.first())
 var turn = 0
 // function checkDate() {
 //     var date = new Date();
@@ -39,7 +39,7 @@ const handler = (payload, res) => {
     {
       title: 'Buying This Week',
       color: '#2FA44F',
-      text: turn,
+      text: obj,
       mrkdwn_in: ['text']
     },
     {
