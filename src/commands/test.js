@@ -18,7 +18,7 @@ var request = require('request');
  obj[ 'bar' ] = true;       
  obj[ 'foo' ] = false; 
 
-
+console.log('*****************' + obj)
 var turn = 0
 // function checkDate() {
 //     var date = new Date();
