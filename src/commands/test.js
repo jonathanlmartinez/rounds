@@ -14,9 +14,9 @@ var mandatory = require('mandatory');
 var VError = require('verror');
 var request = require('request');
 
- // var obj = {}; 
- // obj[ 'bar' ] = true;       
- // obj[ 'foo' ] = false; 
+ var obj = {}; 
+ obj[ 'bar' ] = true;       
+ obj[ 'foo' ] = false; 
 
 
 var turn = 0
