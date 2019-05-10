@@ -31,7 +31,7 @@ var bar = ['Tom K '
 ];
 
  var obj = {}; 
- obj[ 'bar' ] = "value3";       
+ obj[ 'bar' ] = "@jmartinez";       
  obj[ 'foo' ] = "value3"; 
 
 var turn = 0
