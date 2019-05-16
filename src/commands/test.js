@@ -14,12 +14,16 @@ var mandatory = require('mandatory');
 var VError = require('verror');
 var request = require('request');
 
- var obj = {}; 
- obj[ name: 'bar', turn: true];       
- obj[ name: 'foo', turn: true]; 
- obj[ name: 'poo', turn: false]; 
+ // var obj = {}; 
+ // obj[ name: 'bar', turn: true];       
+ // obj[ name: 'foo', turn: true]; 
+ // obj[ name: 'poo', turn: false]; 
 
-
+const fruits = [
+    {name: 'apples', quantity: 2},
+    {name: 'bananas', quantity: 0},
+    {name: 'cherries', quantity: 5}
+];
 
 var turn = 0
 // function checkDate() {
