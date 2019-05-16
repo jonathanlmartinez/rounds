@@ -17,7 +17,7 @@ var request = require('request');
  var obj = {}; 
  obj[ 'bar' ] = true;       
  obj[ 'foo' ] = false; 
- obj[ 'null' ] = false; 
+ obj[ 'dog' ] = false; 
 
 console.log(obj)
 console.log(obj.bar)
@@ -42,19 +42,19 @@ const handler = (payload, res) => {
     {
       title: 'Buying This Week',
       color: '#2FA44F',
-      text: obj,
+      text: turn,
       mrkdwn_in: ['text']
     },
     {
       title: 'On Deck:',
       color: '#E3E4E6',
-      text: turn + 1,
+      text: turn ,
       mrkdwn_in: ['text']
     },
     {
       title: 'In the hole:',
       color: '#E3E4E6',
-      text: turn + 2,
+      text: turn,
       mrkdwn_in: ['text']
     }
   ]

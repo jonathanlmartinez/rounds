@@ -15,8 +15,7 @@ var VError = require('verror');
 var request = require('request');
 var url = 'https://api.github.com/users/rsp';
 
-var bar = ['Tom K '
-,'Ryan S'
+var bar = ['Ryan S'
 ,'Brad A'
 ,'Mike W.'
 ,'Mary S.' 
@@ -28,13 +27,10 @@ var bar = ['Tom K '
 ,'Jon M.'
 ,'Chris B.'
 ,'Lauren'
+,'Tom K'
 ];
 
- var obj = {}; 
- obj[ 'bar' ] = "@jmartinez";       
- obj[ 'foo' ] = "value3"; 
 
-var turn = 0
 // function checkDate() {
 //     var date = new Date();
 //     console.log(date.getDay());
