@@ -14,6 +14,13 @@ var mandatory = require('mandatory');
 var VError = require('verror');
 var request = require('request');
 
+const person = {
+  isHuman: false,
+  printIntroduction: function () {
+    console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+  }
+};
+
  // var obj = {}; 
  // obj[ name: 'bar', turn: true];       
  // obj[ name: 'foo', turn: true]; 
