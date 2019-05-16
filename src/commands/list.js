@@ -17,7 +17,6 @@ var request = require('request');
  var obj = {}; 
  obj[ 'bar' ] = true;       
  obj[ 'foo' ] = false; 
- obj[ 'null' ] = false; 
 
 console.log(obj)
 console.log(obj.bar)
@@ -40,10 +39,7 @@ var turn = 0
 const handler = (payload, res) => {
   let attachments = [
     {
-      title: 'Buying This Week',
-      color: '#2FA44F',
       text: obj,
-      mrkdwn_in: ['text']
     },
     {
       title: 'On Deck:',
