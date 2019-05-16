@@ -15,13 +15,13 @@ var VError = require('verror');
 var request = require('request');
 
  var obj = {}; 
- obj[ 'bar' ] = true;       
- obj[ 'foo' ] = false; 
- obj[ 'dog' ] = false; 
+ obj[ name: 'bar', value: true];       
+ obj[ name: 'foo', value: true]; 
+ obj[ name: 'poo', value: false]; 
 
 console.log(obj)
 console.log(obj.bar)
-console.log(obj[0])
+
 var turn = 0
 // function checkDate() {
 //     var date = new Date();
