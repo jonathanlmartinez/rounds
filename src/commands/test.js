@@ -15,11 +15,10 @@ var VError = require('verror');
 var request = require('request');
 
  var obj = {}; 
- obj[ name: 'bar', idk: true];       
- obj[ name: 'foo', idk: true]; 
- obj[ name: 'poo', idk: false]; 
+ obj[ name: 'bar', turn: true];       
+ obj[ name: 'foo', turn: true]; 
+ obj[ name: 'poo', turn: false]; 
 
-console.log(obj)
 
 
 var turn = 0
