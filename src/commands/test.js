@@ -19,11 +19,11 @@ var request = require('request');
  // obj[ name: 'foo', turn: true]; 
  // obj[ name: 'poo', turn: false]; 
 
-const fruits = [
-    {name: 'apples', quantity: 2},
-    {name: 'bananas', quantity: 0},
-    {name: 'cherries', quantity: 5}
-];
+// const fruits = [
+//     {name: 'apples', quantity: 2},
+//     {name: 'bananas', quantity: 0},
+//     {name: 'cherries', quantity: 5}
+// ];
 
 var turn = 0
 // function checkDate() {
@@ -51,7 +51,7 @@ const handler = (payload, res) => {
     {
       title: 'On Deck:',
       color: '#E3E4E6',
-      text: turn ,
+      text: turn,
       mrkdwn_in: ['text']
     },
     {
