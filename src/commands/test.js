@@ -14,23 +14,13 @@ var mandatory = require('mandatory');
 var VError = require('verror');
 var request = require('request');
 
-const person = {
-  isHuman: false,
-  printIntroduction: function () {
-    console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
-  }
-};
+ var obj = {}; 
+ obj[ 'bar' ] = true;       
+ obj[ 'foo' ] = false; 
+ obj[ 'dog' ] = false; 
 
- // var obj = {}; 
- // obj[ name: 'bar', turn: true];       
- // obj[ name: 'foo', turn: true]; 
- // obj[ name: 'poo', turn: false]; 
-
-// const fruits = [
-//     {name: 'apples', quantity: 2},
-//     {name: 'bananas', quantity: 0},
-//     {name: 'cherries', quantity: 5}
-// ];
+console.log(obj)
+console.log(obj.bar)
 
 var turn = 0
 // function checkDate() {
@@ -58,7 +48,7 @@ const handler = (payload, res) => {
     {
       title: 'On Deck:',
       color: '#E3E4E6',
-      text: turn,
+      text: turn ,
       mrkdwn_in: ['text']
     },
     {
