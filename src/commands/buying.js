@@ -27,9 +27,9 @@ var bar = ['Ryan S'
 ,'Jon M.'
 ,'Chris B.'
 ,'Lauren'
-,'Tom K'
-];
-var turn = 0
+,'Tom K'];
+
+var turn = 0;
 
 // function checkDate() {
 //     var date = new Date();
