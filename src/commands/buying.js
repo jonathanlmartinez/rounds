@@ -22,19 +22,19 @@ var request = require('request');
 console.log(obj)
 console.log(obj.bar)
 
-var bar = ['Ryan S'
-,'Brad A'
-,'Mike W.'
-,'Mary S.' 
-,'Vlad '
-,'Avi'
-,'Bill H.'
-,'Emily'
-,'Chris D.'
-,'Jon M.'
-,'Chris B.'
-,'Lauren'
-,'Tom K'];
+// var bar = ['Ryan S'
+// ,'Brad A'
+// ,'Mike W.'
+// ,'Mary S.' 
+// ,'Vlad '
+// ,'Avi'
+// ,'Bill H.'
+// ,'Emily'
+// ,'Chris D.'
+// ,'Jon M.'
+// ,'Chris B.'
+// ,'Lauren'
+// ,'Tom K'];
 
 var turn = 0
 // function checkDate() {
@@ -56,19 +56,19 @@ const handler = (payload, res) => {
     {
       title: 'Buying This Week',
       color: '#2FA44F',
-      text: turn,
+      text: 'turn',
       mrkdwn_in: ['text']
     },
     {
       title: 'On Deck:',
       color: '#E3E4E6',
-      text: turn ,
+      text: 'turn' ,
       mrkdwn_in: ['text']
     },
     {
       title: 'In the hole:',
       color: '#E3E4E6',
-      text: turn,
+      text: 'turn',
       mrkdwn_in: ['text']
     }
   ]
