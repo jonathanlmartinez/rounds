@@ -80,5 +80,5 @@ const handler = (payload, res) => {
   return
 }
 
-module.exports = { pattern: /test/ig, handler: handler }
+module.exports = { pattern: /buying/ig, handler: handler }
 
