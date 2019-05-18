@@ -14,13 +14,8 @@ var mandatory = require('mandatory');
 var VError = require('verror');
 var request = require('request');
 
- var obj = {}; 
- obj[ 'bar' ] = true;       
- obj[ 'foo' ] = false; 
- obj[ 'dog' ] = false; 
 
-console.log(obj)
-console.log(obj.bar)
+
 
 // var bar = ['Ryan S'
 // ,'Brad A'
