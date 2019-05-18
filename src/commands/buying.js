@@ -14,22 +14,13 @@ var mandatory = require('mandatory');
 var VError = require('verror');
 var request = require('request');
 
+ // var obj = {}; 
+ // obj[ 'bar' ] = true;       
+ // obj[ 'foo' ] = false; 
+ // obj[ 'dog' ] = false; 
 
-
-
-// var bar = ['Ryan S'
-// ,'Brad A'
-// ,'Mike W.'
-// ,'Mary S.' 
-// ,'Vlad '
-// ,'Avi'
-// ,'Bill H.'
-// ,'Emily'
-// ,'Chris D.'
-// ,'Jon M.'
-// ,'Chris B.'
-// ,'Lauren'
-// ,'Tom K'];
+// console.log(obj)
+// console.log(obj.bar)
 
 var turn = 0
 // function checkDate() {
@@ -51,19 +42,19 @@ const handler = (payload, res) => {
     {
       title: 'Buying This Week',
       color: '#2FA44F',
-      text: 'turn',
+      text: turn,
       mrkdwn_in: ['text']
     },
     {
       title: 'On Deck:',
       color: '#E3E4E6',
-      text: 'turn' ,
+      text: turn ,
       mrkdwn_in: ['text']
     },
     {
       title: 'In the hole:',
       color: '#E3E4E6',
-      text: 'turn',
+      text: turn,
       mrkdwn_in: ['text']
     }
   ]
@@ -81,4 +72,3 @@ const handler = (payload, res) => {
 }
 
 module.exports = { pattern: /buying/ig, handler: handler }
-
