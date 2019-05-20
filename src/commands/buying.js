@@ -14,10 +14,7 @@ var VError = require('verror');
 var request = require('request');
 var url = 'https://api.github.com/users/rsp';
 
-var bar = ['Lauren'
-,'Tom K '
-,'Ryan S'
-,'Brad A'
+var bar = ['Brad A'
 ,'Mike W.'
 ,'Mary S.' 
 ,'Vlad '
@@ -27,6 +24,9 @@ var bar = ['Lauren'
 ,'Chris D.'
 ,'Jon M.'
 ,'Chris B.'
+,'Lauren'
+,'Tom K '
+,'Ryan S'
 ];
 
  var obj = {}; 
