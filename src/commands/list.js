@@ -55,7 +55,7 @@ var request = require('request');
 //     text: 'Bill H.'
 //   }
 // ]
-
+var turn = 0
 const handler = (payload, res) => {
   let attachments = [
     {
