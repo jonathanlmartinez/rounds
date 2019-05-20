@@ -14,47 +14,47 @@ var mandatory = require('mandatory');
 var VError = require('verror');
 var request = require('request');
 
-let attachments = [
-  {
-    text: 'Emily'
-  },
-  {
-    text: 'Chris D.'
-  },
-  {
-    text: 'Jon M.'
-  },
-  {
-    text: 'Chris B.'
-  },
-  {
-    text: 'Lauren'
-  },
-  {
-    text: 'Tom K'
-  },
-  {
-    text: 'Ryan S'
-  },
-  {
-    text: 'Brad A'
-  },
-  {
-    text: 'Mike W.'
-  },
-  {
-    text: 'Mary S.'
-  },
-  {
-    text: 'Vlad'
-  },
-  {
-    text: 'Avi'
-  },
-  {
-    text: 'Bill H.'
-  }
-]
+// let attachments = [
+//   {
+//     text: 'Emily'
+//   },
+//   {
+//     text: 'Chris D.'
+//   },
+//   {
+//     text: 'Jon M.'
+//   },
+//   {
+//     text: 'Chris B.'
+//   },
+//   {
+//     text: 'Lauren'
+//   },
+//   {
+//     text: 'Tom K'
+//   },
+//   {
+//     text: 'Ryan S'
+//   },
+//   {
+//     text: 'Brad A'
+//   },
+//   {
+//     text: 'Mike W.'
+//   },
+//   {
+//     text: 'Mary S.'
+//   },
+//   {
+//     text: 'Vlad'
+//   },
+//   {
+//     text: 'Avi'
+//   },
+//   {
+//     text: 'Bill H.'
+//   }
+// ]
 
 const handler = (payload, res) => {
   let attachments = [
