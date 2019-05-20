@@ -42,19 +42,19 @@ const handler = (payload, res) => {
     {
       title: 'Buying This Week',
       color: '#2FA44F',
-      text: turn,
+      text: 'turn',
       mrkdwn_in: ['text']
     },
     {
       title: 'On Deck:',
       color: '#E3E4E6',
-      text: turn ,
+      text: 'turn' ,
       mrkdwn_in: ['text']
     },
     {
       title: 'In the hole:',
       color: '#E3E4E6',
-      text: turn,
+      text: 'turn',
       mrkdwn_in: ['text']
     }
   ]
