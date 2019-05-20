@@ -55,7 +55,7 @@ const handler = (payload, res) => {
       title: 'In the hole:',
       color: '#E3E4E6',
       text: turn,
-      mrkdwn_in: ['text']
+      mrkdwn_in: ['text'] 
     }
   ]
   
