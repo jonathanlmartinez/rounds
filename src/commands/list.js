@@ -14,41 +14,6 @@ var mandatory = require('mandatory');
 var VError = require('verror');
 var request = require('request');
 
- var obj = {}; 
- obj[ 'bar' ] = true;       
- obj[ 'foo' ] = false; 
-
-console.log(obj)
-console.log(obj.bar)
-console.log(obj[0])
-var turn = 0
-// function checkDate() {
-//     var date = new Date();
-//     console.log(date.getDay());
-//     console.log(date.getHours());
-//     if(date.getDay() === 6 && date.getHours() === 17) {
-//         console.log("HELLO WORLD!");
-//     }
-// }
-
-// var dateLoop = setInterval(function() {
-//     checkDate();
-// },5000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const handler = (payload, res) => {
   let attachments = [
     {
