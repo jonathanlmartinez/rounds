@@ -36,79 +36,79 @@ const handler = (payload, res) => {
     {
       title: 'Brad A',
       color: '#2FA44F',
-      text: ''],
+      text: '',
       mrkdwn_in: ['text']
     },
     {
       title: 'Mike W.',
       color: '#E3E4E6',
-      text: ''
+      text: '',
       mrkdwn_in: ['text']
     },
     {
       title: 'Mary',
       color: '#E3E4E6',
-      text: ''
+      text: '',
       mrkdwn_in: ['text']
     },
     {
       title: 'Vlad',
       color: '#E3E4E6',
-      text: ''
+      text: '',
       mrkdwn_in: ['text']
     },
     {
       title: 'Avi',
       color: '#E3E4E6',
-      text: ''
+      text: '',
       mrkdwn_in: ['text']
     },
     {
       title: 'Bill H.',
       color: '#2FA44F',
-      text: ''],
+      text: '',
       mrkdwn_in: ['text']
     },
     {
       title: 'Emily',
       color: '#E3E4E6',
-      text: ''
+      text: '',
       mrkdwn_in: ['text']
     },
     {
       title: 'Chris D.',
       color: '#E3E4E6',
-      text: ''
+      text: '',
       mrkdwn_in: ['text']
     },
     {
       title: 'Jon M.',
       color: '#E3E4E6',
-      text: ''
+      text: '',
       mrkdwn_in: ['text']
     },
     {
       title: 'Chris B.',
       color: '#E3E4E6',
-      text: ''
+      text: '',
       mrkdwn_in: ['text']
     },
     {
       title: 'Lauren',
       color: '#E3E4E6',
-      text: ''
+      text: '',
       mrkdwn_in: ['text']
     },
     {
       title: 'Tom K ',
       color: '#E3E4E6',
-      text: ''
+      text: '',
       mrkdwn_in: ['text']
     },
     {
       title: 'Ryan S',
       color: '#E3E4E6',
-      text: ''
+      text: '',
       mrkdwn_in: ['text']
     }
   ]
