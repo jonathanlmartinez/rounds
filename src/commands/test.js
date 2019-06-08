@@ -37,7 +37,7 @@ function Switch() {
   console.log(list);
 }
 
-Switch();
+
 
 
 const handler = (payload, res) => {
@@ -45,7 +45,7 @@ const handler = (payload, res) => {
     {
       title: 'Buying This Week',
       color: '#2FA44F',
-      text: list,
+      text: Switch();,
       mrkdwn_in: ['text']
     },
     {
