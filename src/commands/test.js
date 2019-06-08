@@ -40,6 +40,7 @@ function Switch() {
 Switch();
 console.log(list);
 var x = list.find(item => item.current === true);
+console.log(x);
 const handler = (payload, res) => {
   
   let attachments = [
