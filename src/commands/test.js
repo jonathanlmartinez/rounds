@@ -39,13 +39,14 @@ function Switch() {
 
 Switch();
 
+
 const handler = (payload, res) => {
   
   let attachments = [
     {
       title: 'Buying This Week',
-      color: list.find(item => item.current === true);,
-      text: "ji",
+      color: '#E3E4E6',
+      text: list.find(item => item.current === true),
       mrkdwn_in: ['text']
     },
     {
