@@ -41,11 +41,12 @@ function Switch() {
 
 
 const handler = (payload, res) => {
+  Switch();
   let attachments = [
     {
       title: 'Buying This Week',
       color: '#2FA44F',
-      text: Switch();,
+      text: "ji";,
       mrkdwn_in: ['text']
     },
     {
