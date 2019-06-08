@@ -38,10 +38,10 @@ function Switch() {
 }
 
 
-
+Switch();
 
 const handler = (payload, res) => {
-  Switch();
+  
   let attachments = [
     {
       title: 'Buying This Week',
