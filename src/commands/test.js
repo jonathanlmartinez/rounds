@@ -44,7 +44,7 @@ const handler = (payload, res) => {
   let attachments = [
     {
       title: 'Buying This Week',
-      color: '#2FA44F',
+      color: list.find(item => item.current === true);,
       text: "ji",
       mrkdwn_in: ['text']
     },
