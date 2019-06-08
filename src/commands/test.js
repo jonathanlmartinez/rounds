@@ -29,18 +29,14 @@ var list = [
 function Switch() {
   var current = list.find(item => item.current === true);
   var currentIndex = list.indexOf(current);
-  list[currentIndex].current == false;
-  console.log(list[currentIndex]);
+  list[currentIndex].current = false;
   var next = currentIndex + 1;
-  list[next].current == true;
-  console.log(list[next]);
-  console.log(list);
+  list[next].current = true;
+  list = list;
 };
 
 Switch();
-console.log(list);
 var x = list.find(item => item.current === true);
-console.log(x);
 const handler = (payload, res) => {
   
   let attachments = [
