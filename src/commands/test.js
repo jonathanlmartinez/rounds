@@ -38,15 +38,15 @@ function Switch() {
 };
 
 Switch();
-
-
+console.log(list);
+var x = list.find(item => item.current === true);
 const handler = (payload, res) => {
   
   let attachments = [
     {
       title: 'Buying This Week',
       color: '#E3E4E6',
-      text: list.find(item => item.current === true),
+      text: x,
       mrkdwn_in: ['text']
     },
     {
