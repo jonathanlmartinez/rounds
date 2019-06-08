@@ -37,7 +37,7 @@ function Switch() {
   console.log(list);
 };
 
-
+Switch();
 
 const handler = (payload, res) => {
   
