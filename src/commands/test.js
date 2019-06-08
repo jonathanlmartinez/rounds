@@ -29,10 +29,10 @@ var list = [
 function Switch() {
   var current = list.find(item => item.current === true);
   var currentIndex = list.indexOf(current);
-  list[currentIndex].current = false;
+  list[currentIndex].current == false;
   console.log(list[currentIndex]);
   var next = currentIndex + 1;
-  list[next].current = true;
+  list[next].current == true;
   console.log(list[next]);
   console.log(list);
 };
@@ -47,7 +47,7 @@ const handler = (payload, res) => {
     {
       title: 'Buying This Week',
       color: '#E3E4E6',
-      text: x,
+      text: x.name,
       mrkdwn_in: ['text']
     },
     {
