@@ -14,27 +14,30 @@ var mandatory = require('mandatory');
 var VError = require('verror');
 var request = require('request');
 
- var obj = {}; 
- obj[ 'bar' ] = true;       
- obj[ 'foo' ] = false; 
- obj[ 'dog' ] = false; 
+var list = [
+    {name: 'jon', current: false},
+    {name: 'mike', current: false},
+    {name: 'ryan', current: false},
+    {name: 'avi', current: true},
+    {name: 'hyke', current: false},
+    {name: 'bartman', current: false},
+    {name: 'mary', current: false},
+    {name: 'lauren', current: false},
+    {name: 'chris', current: false}
+]
 
-console.log(obj)
-console.log(obj.bar)
+function Switch() {
+  var current = list.find(item => item.current === true);
+  var currentIndex = list.indexOf(current);
+  list[currentIndex].current = false;
+  console.log(list[currentIndex]);
+  var next = currentIndex + 1;
+  list[next].current = true;
+  console.log(list[next]);
+  console.log(list);
+}
 
-var turn = 0
-// function checkDate() {
-//     var date = new Date();
-//     console.log(date.getDay());
-//     console.log(date.getHours());
-//     if(date.getDay() === 6 && date.getHours() === 17) {
-//         console.log("HELLO WORLD!");
-//     }
-// }
-
-// var dateLoop = setInterval(function() {
-//     checkDate();
-// },5000);
+Switch();
 
 
 const handler = (payload, res) => {
@@ -42,19 +45,19 @@ const handler = (payload, res) => {
     {
       title: 'Buying This Week',
       color: '#2FA44F',
-      text: turn,
+      text: list,
       mrkdwn_in: ['text']
     },
     {
       title: 'On Deck:',
       color: '#E3E4E6',
-      text: turn ,
+      text: "" ,
       mrkdwn_in: ['text']
     },
     {
       title: 'In the hole:',
       color: '#E3E4E6',
-      text: turn,
+      text: "turn",
       mrkdwn_in: ['text'] 
     }
   ]
