@@ -31,10 +31,6 @@ var bar = ['Vlad'
 ,'Allen'
 ];
 
- var obj = {}; 
- obj[ 'bar' ] = "value3";       
- obj[ 'foo' ] = "value3"; 
-
 var turn = 0
 // function checkDate() {
 //     var date = new Date();
