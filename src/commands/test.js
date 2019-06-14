@@ -14,7 +14,7 @@ var mandatory = require('mandatory');
 var VError = require('verror');
 var request = require('request');
 
-var list = [
+var const = [
     {name: 'jon', current: false},
     {name: 'mike', current: false},
     {name: 'ryan', current: false},

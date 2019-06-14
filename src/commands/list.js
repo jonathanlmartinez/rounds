@@ -34,13 +34,25 @@ var turn = 0
 const handler = (payload, res) => {
   let attachments = [
     {
-      title: 'Brad A',
+      title: 'Hayk',
       color: '#008baa',
       text: '',
       mrkdwn_in: ['text']
     },
     {
-      title: 'Mike W.',
+      title: 'Bartman',
+      color: '#008baa',
+      text: '',
+      mrkdwn_in: ['text']
+    },
+    {
+      title: 'Mike',
+      color: '#008baa',
+      text: '',
+      mrkdwn_in: ['text']
+    },
+    {
+      title: 'Allen',
       color: '#008baa',
       text: '',
       mrkdwn_in: ['text']
@@ -64,7 +76,7 @@ const handler = (payload, res) => {
       mrkdwn_in: ['text']
     },
     {
-      title: 'Bill H.',
+      title: 'Bill',
       color: '#008baa',
       text: '',
       mrkdwn_in: ['text']
@@ -82,7 +94,7 @@ const handler = (payload, res) => {
       mrkdwn_in: ['text']
     },
     {
-      title: 'Jon M.',
+      title: 'Jon',
       color: '#008baa',
       text: '',
       mrkdwn_in: ['text']
@@ -100,13 +112,13 @@ const handler = (payload, res) => {
       mrkdwn_in: ['text']
     },
     {
-      title: 'Tom K ',
+      title: 'Tom',
       color: '#008baa',
       text: '',
       mrkdwn_in: ['text']
     },
     {
-      title: 'Ryan S',
+      title: 'Ryan',
       color: '#008baa',
       text: '',
       mrkdwn_in: ['text']
