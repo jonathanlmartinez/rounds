@@ -22,14 +22,13 @@ var bar = ['Vlad'
 ,'Jon'
 ,'Chris B.'
 ,'Lauren'
-,'Tom K '
+,'Tom K'
 ,'Ryan'
 ,'Bartman'
 ,'Hayk'
 ,'Mary'
 ,'Mike'
-,'Allen'
-];
+,'Allen'];
 
 var turn = 0;
 // function checkDate() {
