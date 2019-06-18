@@ -45,7 +45,7 @@ var turn = 0;
 // },5000);
 
 
-const handler = (payload, res) => {
+function handler = (payload, res) => {
   let attachments = [
     {
       title: 'Buying This Week',
